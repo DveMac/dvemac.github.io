@@ -1,0 +1,33 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Math Birthday</title>
+        <meta name="description" content="Ever wondered what your math birthday is?">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+      <div class="container">
+        <h1 style="text-align: center">MATH BIRTHDAY</h1>
+        <hr />
+        <form id="dateform">
+          <label>Enter your birthday to discover your math birthday.
+          <input name="dob" inputmode="number" title="Date of Birth" pattern="\d*"
+            autocomplete="bday" class="dob" placeholder="MM / DD / YYYY" />
+            </label>
+        </form>
+        <br/>
+        <div id="next-bday" class="hidden"></div>
+        <ul id="results" class="timeline hidden"></ul>
+      </div> <!-- /container -->
+      <script type="text/javascript" src="js/moment.min.js"></script>
+      <script type="text/javascript" src="js/cleave.min.js"></script>
+      <script src="js/main.js"></script>
+    </body>
+</html>
